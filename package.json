@@ -1,0 +1,24 @@
+{
+  "name": "os-specific-run",
+  "version": "1.0.0",
+  "description": "A github action for running a separate command based on the os",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KnicKnic/os-specific-run.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KnicKnic/os-specific-run/issues"
+  },
+  "homepage": "https://github.com/KnicKnic/os-specific-run#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/exec": "^1.0.4"
+  }
+}

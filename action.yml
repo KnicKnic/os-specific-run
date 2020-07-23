@@ -1,0 +1,30 @@
+name: 'OS specific run'
+description: 'Run a command based on the OS'
+inputs:
+  linux:  # id of input
+    description: 'linux commandline'
+    required: false
+    default: 'echo "No command specified for linux"'
+  macos:  # id of input
+    description: 'macos commandline'
+    required: false
+    default: 'echo "No command specified for macos"'
+  windows:  # id of input
+    description: 'windows commandline'
+    required: false
+    default: 'echo "No command specified for windows"'
+  linuxShell:  # id of input
+    description: 'linux commandline shell'
+    required: false
+    default: 'bash'
+  macosShell:  # id of input
+    description: 'macos commandline shell'
+    required: false
+    default: 'bash'
+  windowsShell:  # id of input
+    description: 'windows commandline shell'
+    required: false
+    default: 'pwsh'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
