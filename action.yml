@@ -1,5 +1,6 @@
 name: 'OS specific run'
 description: 'Run a command based on the OS'
+author: Nick Maliwacki
 inputs:
   linux:  # id of input
     description: 'linux commandline'
@@ -25,6 +26,9 @@ inputs:
     description: 'windows commandline shell'
     required: false
     default: 'pwsh'
+branding:
+  icon: list
+  color: purple
 runs:
   using: 'node12'
   main: 'dist/index.js'

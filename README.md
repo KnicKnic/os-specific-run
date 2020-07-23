@@ -41,7 +41,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - uses: knicknic/os-specific-run@master
+    - uses: knicknic/os-specific-run@v1
       with:
         macos: echo "Hi from macos"
         linux: |
