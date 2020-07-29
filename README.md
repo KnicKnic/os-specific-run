@@ -1,7 +1,17 @@
-# os-specific-run
+[![test](https://github.com/KnicKnic/os-specific-run/workflows/test/badge.svg?branch=master&event=push)](https://github.com/KnicKnic/os-specific-run/actions?query=branch%3Amaster++event%3Apush+)
+# os-specific-run 
 
 A github action for running a separate command based on the os
 
+```yaml
+    - uses: knicknic/os-specific-run@v1
+      with:
+        macos: echo "Hi from macos"
+        linux: |
+          echo "Hi from linux"
+          echo "Hi from linux second line"
+        windows: echo "Hi from windows"
+```
 
 ## Params
 
@@ -21,7 +31,7 @@ A github action for running a separate command based on the os
 
 See https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#using-a-specific-shell for more details
 
-## Example
+## Full Example
 
 ```yaml
 name: test
