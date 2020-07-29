@@ -1631,7 +1631,10 @@ async function body() {
         let command =  '';
         let unformattedShell = '';
 
-        let file = path.join(process.env.GITHUB_WORKSPACE, uuidv4())
+        let tmpPath = path.join(path.sep, 'tmp', 'knicknic', 'os-specific-run')
+        await fs.promises.mkdir(tmpPath, { recursive: true });
+
+        let file = path.join(tmpPath, uuidv4())
 
         // https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#using-a-specific-shell
         
