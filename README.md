@@ -4,7 +4,7 @@
 A github action for running a separate command based on the os
 
 ```yaml
-    - uses: knicknic/os-specific-run@v1
+    - uses: knicknic/os-specific-run@v1.0.3
       with:
         macos: echo "Hi from macos"
         linux: |
@@ -71,12 +71,12 @@ The problem is you have to figure them out, and they end up creating multiple st
 ### Setup Environment
 
 ```pwsh
-npm i -g @vercel/ncc
+npm i  @vercel/ncc --save-dev
 npm install
 ```
 
 ### Update project
 
 ```pwsh
-ncc build index.js
+./node_modules/.bin/ncc build index.js
 ```
