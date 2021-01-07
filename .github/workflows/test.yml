@@ -38,7 +38,7 @@ jobs:
           echo "Hi from linux second line"
         windows: echo "Hi from windows"
     - 
-      uses: knicknic/os-specific-run@master
+      uses: knicknic/os-specific-run
       with:
         macos: echo "test2"
         linux: echo "test2"
