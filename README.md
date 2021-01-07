@@ -71,7 +71,7 @@ The problem is you have to figure them out, and they end up creating multiple st
 ### Setup Environment
 
 ```pwsh
-npm i -g @zeit/ncc
+npm i -g @vercel/ncc
 npm install
 ```
 
