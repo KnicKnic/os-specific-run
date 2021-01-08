@@ -12,7 +12,7 @@ jobs:
     - 
       name: regenerate dist/index.js
       run: |
-        npm i @vercel/ncc --save-dev
+        sudo npm i -g @vercel/ncc
         npm install
         ./node_modules/.bin/ncc build index.js
     -
