@@ -12,6 +12,8 @@ A github action for running a separate command based on the os
           echo "Hi from linux second line"
         windows: echo "Hi from windows"
 ```
+### Keeping actions up-to-date
+Enable dependabot to get notifications for updated actions by creating [.github/dependabot.yml](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/configuration-options-for-dependency-updates#about-the-dependabotyml-file) in your repository with the [actions configurations](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/keeping-your-actions-up-to-date-with-dependabot#enabling-dependabot-version-updates-for-actions)
 
 ## Params
 
@@ -71,7 +73,7 @@ The problem is you have to figure them out, and they end up creating multiple st
 ### Setup Environment
 
 ```pwsh
-npm i -g @vercel/ncc
+npm i -g @vercel/ncc@0.26.2 # can be a newer version
 npm install
 ```
 
