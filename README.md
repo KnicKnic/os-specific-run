@@ -1,4 +1,4 @@
-[![test](https://github.com/KnicKnic/os-specific-run/workflows/test/badge.svg?branch=master&event=push&workflow=test)](https://github.com/KnicKnic/os-specific-run/actions?query=branch%3Amaster+event%3Apush+workflow%3Atest)
+[![test](https://github.com/KnicKnic/os-specific-run/workflows/test/badge.svg?branch=main&event=push&workflow=test)](https://github.com/KnicKnic/os-specific-run/actions?query=branch%3Amain+event%3Apush+workflow%3Atest)
 # os-specific-run 
 
 A github action for running a separate command based on the os
