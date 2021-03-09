@@ -30,6 +30,7 @@ jobs:
         macos: echo "test2"
         linux: echo "test2"
         windows: echo "test2"
+        windowsShell: cmd
     - 
       uses: knicknic/os-specific-run@main
       with:
@@ -44,5 +45,4 @@ jobs:
         macos: echo "test2"
         linux: echo "test2"
         windows: echo "test2"
-        
-        
+        windowsShell: cmd
