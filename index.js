@@ -34,7 +34,7 @@ let builtInShells = {
     pwsh: 'pwsh -command "& \'{0}\'"',
     python: 'python {0}',
     sh: 'sh -e {0}',
-    cmd: '%ComSpec% /D /E:ON /V:OFF /S /C "CALL "{0}""',
+    cmd: 'cmd.exe /D /E:ON /V:OFF /S /C "CALL "{0}""',
     powershell: 'powershell -command "& \'{0}\'"',
     }
 
