@@ -23,6 +23,7 @@ jobs:
           echo "Hi from linux"
           echo "Hi from linux second line"
         windows: echo "Hi from windows"
+        windowsShell: cmd
     - 
       uses: ./
       with:
